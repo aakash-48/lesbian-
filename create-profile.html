@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Profile — HerSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <a href="dashboard.html" class="btn btn-ghost">Back</a>
+      <button id="logoutBtn" class="btn btn-ghost">Log out</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <form id="profileForm" class="card glass form-card" enctype="multipart/form-data" novalidate>
+      <h2>Create your profile</h2>
+
+      <div class="avatar-row">
+        <div class="avatar-preview" id="avatarPreview">
+          <img id="avatarImg" src="assets/avatar-placeholder.png" alt="avatar preview">
+        </div>
+        <label class="file-ctrl btn btn-ghost">
+          Upload photo
+          <input id="avatarInput" type="file" accept="image/*" style="display:none">
+        </label>
+      </div>
+
+      <label class="field">
+        <span class="label">Display name</span>
+        <input type="text" id="name" required>
+      </label>
+
+      <label class="field-inline">
+        <div>
+          <span class="label">Age</span>
+          <input type="number" id="age" min="18" max="120" required>
+        </div>
+        <div>
+          <span class="label">City</span>
+          <input type="text" id="city" placeholder="Kathmandu">
+        </div>
+        <div>
+          <span class="label">Country</span>
+          <input type="text" id="country" placeholder="Nepal">
+        </div>
+      </label>
+
+      <label class="field">
+        <span class="label">Short bio (max 300)</span>
+        <textarea id="bio" rows="4" maxlength="300"></textarea>
+      </label>
+
+      <div class="socials">
+        <span class="label">Social links</span>
+        <input type="url" id="facebook" placeholder="Facebook profile URL (optional)">
+        <input type="url" id="instagram" placeholder="Instagram profile URL (optional)">
+        <input type="url" id="snapchat" placeholder="Snapchat link (optional)">
+      </div>
+
+      <div class="field">
+        <span class="label">Interests</span>
+        <div id="interestsWrap" class="chips">
+          <!-- chips inserted dynamically -->
+        </div>
+        <div class="chip-controls">
+          <input id="interestInput" placeholder="Add interest e.g. hiking" />
+          <button type="button" id="addInterestBtn" class="btn btn-ghost">Add</button>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Save Profile</button>
+        <a href="dashboard.html" class="btn btn-link">Cancel</a>
+      </div>
+
+      <p id="profileMsg" class="muted small"></p>
+    </form>
+  </main>
+
+  <script src="createProfile.js"></script>
+</body>
+</html>

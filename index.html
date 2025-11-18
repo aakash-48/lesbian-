@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HerSpace — Connect • Celebrate • Belong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <a href="signup.html" class="btn btn-ghost">Join</a>
+      <a href="login.html" class="btn">Log in</a>
+    </div>
+  </nav>
+
+  <header class="hero container glass hero-anim">
+    <div class="hero-left">
+      <h1>Find your community. Share your story.</h1>
+      <p class="muted">A safe, friendly space for queer women to meet, create meaningful connections, and celebrate who they are.</p>
+      <div class="hero-cta">
+        <a href="signup.html" class="btn btn-primary large">Join Community</a>
+        <a href="dashboard.html" class="btn btn-link">Browse Profiles</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="phone-mockup glass">
+        <div class="mock-avatar"></div>
+        <div class="mock-lines">
+          <div class="line short"></div>
+          <div class="line"></div>
+          <div class="line small"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features glass feature-anim">
+      <div class="feature">
+        <h3>Safe Spaces</h3>
+        <p>Moderated profiles, respectful community guidelines, and tools to control your privacy.</p>
+      </div>
+      <div class="feature">
+        <h3>Social Links</h3>
+        <p>Add your Instagram, Facebook, Snapchat and more — let others follow your vibe.</p>
+      </div>
+      <div class="feature">
+        <h3>Discover</h3>
+        <p>Search by interests, age and location — find people who match your passions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container glass">
+    <p>© <span id="year"></span> HerSpace — A community by women for women.</p>
+    <div>
+      <a href="signup.html">Sign up</a>
+      <a href="login.html">Log in</a>
+      <a href="dashboard.html">Browse</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

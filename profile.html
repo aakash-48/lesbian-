@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — HerSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <a href="dashboard.html" class="btn btn-ghost">Back</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="profileHeader" class="profile-header glass">
+      <!-- Dynamically filled -->
+    </section>
+
+    <section class="card glass">
+      <h3>About</h3>
+      <p id="aboutText" class="muted"></p>
+    </section>
+
+    <section class="card glass">
+      <h3>Interests</h3>
+      <div id="interestsList" class="chips"></div>
+    </section>
+
+    <section class="card glass social-links">
+      <h3>Social</h3>
+      <div id="socialLinks"></div>
+    </section>
+  </main>
+
+  <script src="viewProfile.js"></script>
+</body>
+</html>

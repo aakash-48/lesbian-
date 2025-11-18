@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Log In — HerSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <a href="signup.html" class="btn btn-ghost">Join us</a>
+    </div>
+  </nav>
+
+  <main class="container center-page">
+    <form id="loginForm" class="card glass form-card" novalidate>
+      <h2>Welcome back</h2>
+
+      <label class="field">
+        <span class="label">Email</span>
+        <input type="email" id="email" required placeholder="you@domain.com">
+      </label>
+
+      <label class="field">
+        <span class="label">Password</span>
+        <input type="password" id="password" required placeholder="••••••">
+      </label>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Log in</button>
+        <a href="signup.html" class="btn btn-link">Sign up</a>
+      </div>
+
+      <p id="loginMsg" class="muted small"></p>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

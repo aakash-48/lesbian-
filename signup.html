@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up — HerSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <a href="login.html" class="btn btn-ghost">Already have an account?</a>
+    </div>
+  </nav>
+
+  <main class="container center-page">
+    <form id="signupForm" class="card glass form-card" novalidate>
+      <h2>Create your account</h2>
+
+      <label class="field">
+        <span class="label">Full name</span>
+        <input type="text" id="name" required placeholder="Jane Doe">
+      </label>
+
+      <label class="field">
+        <span class="label">Email</span>
+        <input type="email" id="email" required placeholder="you@domain.com">
+      </label>
+
+      <label class="field">
+        <span class="label">Password</span>
+        <input type="password" id="password" minlength="6" required placeholder="••••••">
+      </label>
+
+      <label class="field">
+        <span class="label">Confirm password</span>
+        <input type="password" id="confirmPassword" required placeholder="••••••">
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Sign up</button>
+        <a href="login.html" class="btn btn-link">Log in</a>
+      </div>
+
+      <p id="signupMsg" class="muted small"></p>
+    </form>
+  </main>
+
+  <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — HerSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-soft">
+  <nav class="nav container">
+    <a class="brand" href="index.html">HerSpace</a>
+    <div class="nav-links">
+      <span id="welcomeName" class="muted"></span>
+      <a href="create-profile.html" class="btn">Create Profile</a>
+      <button id="logoutBtn" class="btn btn-ghost">Log out</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="search-filter glass">
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Search by name, city or interest..." />
+        <select id="countryFilter">
+          <option value="">All countries</option>
+        </select>
+      </div>
+
+      <div class="filter-row">
+        <label>Age:
+          <select id="ageFilter">
+            <option value="">All</option>
+            <option value="18-24">18–24</option>
+            <option value="25-34">25–34</option>
+            <option value="35-44">35–44</option>
+            <option value="45+">45+</option>
+          </select>
+        </label>
+        <label>Sort:
+          <select id="sortSelect">
+            <option value="recent">Recently added</option>
+            <option value="age-asc">Age: low → high</option>
+            <option value="age-desc">Age: high → low</option>
+            <option value="name">Name A → Z</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section id="profilesGrid" class="grid profiles-grid"></section>
+  </main>
+
+  <footer class="footer container glass">
+    <p class="muted small">Explore safely — respect & consent first.</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
